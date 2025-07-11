@@ -11,12 +11,12 @@ steps:
   inputs:
     version: '$(dotnetSdkVersion)'
 
-    
+
 - script: |
     sudo apt update
     sudo apt install -y mono-complete
     mono --version
-    displayName: 'Install Mono'
+  displayName: 'Install Mono'
       
 
 - task: DotNetCoreCLI@2
